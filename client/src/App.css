@@ -1,0 +1,157 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #090d18;
+  color: #fff;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.app {
+  width: 100%;
+  max-width: 500px;
+  padding: 25px;
+  border-radius: 20px;
+  background: #151b2c;
+  border: 1px solid #293248;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff648d;
+}
+
+.role {
+  background: #293248;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #a9b4c9;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+label {
+  font-size: 13px;
+  color: #ccd5e6;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  background: #0b1120;
+  border: 1px solid #35415b;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+}
+
+input:focus {
+  border-color: #ff648d;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  background: #e83e74;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.stop {
+  background: #c62842;
+}
+
+.camera {
+  position: relative;
+  margin-top: 25px;
+  background: #050810;
+  border-radius: 15px;
+  overflow: hidden;
+  aspect-ratio: 9 / 12;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.live-indicator,
+.viewer-label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 9px 12px;
+  border-radius: 7px;
+  background: #d92b49;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.viewer-label {
+  background: #273d64;
+}
+
+.status {
+  padding: 15px;
+  margin-top: 18px;
+  border-radius: 10px;
+  background: #202a40;
+  color: #c6d5ec;
+  font-size: 13px;
+  text-align: center;
+}
+
+.controls {
+  margin-top: 18px;
+}
+
+footer {
+  margin-top: 25px;
+  color: #8290aa;
+  font-size: 11px;
+  text-align: center;
+}
